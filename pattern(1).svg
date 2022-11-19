@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="1080px" width="1920px">
+  <defs>
+    <pattern id="doodad" width="21.94" height="38" viewBox="0 0 34.64101615137755 60" patternUnits="userSpaceOnUse" patternTransform="rotate(141)">
+      <rect width="100%" height="100%" fill="rgba(247, 250, 252,1)"/>
+      <path d="M36.37 39L36.37 41L32.91 39L34.64 38L34.64 42L32.91 41L34.64 40z" stroke-linejoin="miter" fill="#1a202c" filter="url(#filter-doodad-1)"/>
+      <path d="M19.05 49L19.05 51L15.59 49L17.32 48L17.32 52L15.59 51L17.32 50z" stroke-linejoin="miter" fill="#1a202c" filter="url(#filter-doodad-1)"/>
+      <path d="M1.73 39L1.73 41L-1.73 39L0 38L0 42L-1.73 41L0 40z" stroke-linejoin="miter" fill="#1a202c" filter="url(#filter-doodad-1)"/>
+      <path d="M1.73 19L1.73 21L-1.73 19L0 18L0 22L-1.73 21L0 20z" stroke-linejoin="miter" fill="#1a202c" filter="url(#filter-doodad-1)"/>
+      <path d="M19.05 9L19.05 11L15.59 9L17.32 8L17.32 12L15.59 11L17.32 10z" stroke-linejoin="miter" fill="#1a202c" filter="url(#filter-doodad-1)"/>
+      <path d="M36.37 19L36.37 21L32.91 19L34.64 18L34.64 22L32.91 21L34.64 20z" stroke-linejoin="miter" fill="#1a202c" filter="url(#filter-doodad-1)"/>
+      <path d="M34.64 40L34.64 40L34.64 40L34.64 40L34.64 40L34.64 40L34.64 40z" stroke-linejoin="miter" fill="#ecc94b"/>
+      <path d="M17.32 50L17.32 50L17.32 50L17.32 50L17.32 50L17.32 50L17.32 50z" stroke-linejoin="miter" fill="#ecc94b"/>
+      <path d="M0 40L0 40L0 40L0 40L0 40L0 40L0 40z" stroke-linejoin="miter" fill="#ecc94b"/>
+      <path d="M0 20L0 20L0 20L0 20L0 20L0 20L0 20z" stroke-linejoin="miter" fill="#ecc94b"/>
+      <path d="M17.32 10L17.32 10L17.32 10L17.32 10L17.32 10L17.32 10L17.32 10z" stroke-linejoin="miter" fill="#ecc94b"/>
+      <path d="M34.64 20L34.64 20L34.64 20L34.64 20L34.64 20L34.64 20L34.64 20z" stroke-linejoin="miter" fill="#ecc94b"/>
+      <path d="M19.92 28.5L19.92 31.5L14.72 28.5L17.32 27L17.32 33L14.72 31.5L17.32 30z" stroke-linejoin="miter" fill="#1a202c" filter="url(#filter-doodad-1)"/>
+    </pattern>
+    <filter id="filter-doodad-1">
+      <feTurbulence baseFrequency="0" numOctaves="2" type="fractalNoise" result="result1"/>
+      <feDisplacementMap in2="result1" scale="17" result="result2" xChannelSelector="R" in="SourceGraphic"/>
+      <feComposite in2="result2" in="SourceGraphic" operator="atop" result="fbSourceGraphic"/>
+    </filter>
+  </defs>
+  <rect fill="url(#doodad)" height="200%" width="200%"/>
+</svg>

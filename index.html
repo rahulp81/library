@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+  </head>
+  <body>
+    <div class="nav">
+      <div class="container">
+        <h1>Welcome to Library!</h1>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="container">
+        <button class="addBook">+ Add Book</button>
+        <div class="grid"></div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    Copyright &copy;
+    <script>
+      document.write(new Date().getFullYear());
+    </script>
+    Rahul Pillai
+  </footer>
+  <div class="modal">
+    <form class="add-book" id="addBook">
+      <h3>Add a New Book</h3>
+      <input
+        type="text"
+        class="input"
+        placeholder="Title"
+        id="title"
+        required
+        maxlength="100"
+      />
+      <input
+        type="text"
+        class="input"
+        placeholder="Author"
+        id="author"
+        required
+        maxlength="100"
+      />
+      <input
+        type="number"
+        name="number"
+        placeholder="No of Pages"
+        id="pages"
+        max="1000"
+        min="1"
+      />
+      <div class="checkmark">
+        <label for="checkmark">Have you read this Book?</label>
+        <input type="checkbox" name="check" id="checkmark" />
+      </div>
+      <button type="submit" class="input" id="submit">Submit</button>
+    </form>
+  </div>
+  <div class="overlay"></div>
+
+  <script src="./script.js"></script>
+</html>
